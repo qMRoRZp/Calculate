@@ -1,0 +1,34 @@
+A =  input('Please enter first number: ')
+B =  input('Please enter seconde number: ')
+C =  input('Please enter third number: ')
+try:
+    A = float (A)
+    B = float (B)
+    C = float (C)
+    if ((A > 0)&(B > 0)&(C > 0)):
+        if (A > B):
+            if (A > C):
+                if (A**2 == B**2 + C**2):
+                    print ('Done.')
+                else :
+                    print ('Not verified.')
+            else :
+                if (C**2 == B**2 + A**2):   
+                    print ('Done.')
+                else :
+                    print ('Not verified.')    
+        else :
+            if (B > C):
+                if (B**2 == C**2 + A**2):
+                    print ('Done.')
+                else :
+                    print ('Not verified.')    
+            else : 
+                if (C**2 == B**2 + A**2):
+                    print ('Done.')
+                else :
+                    print ('Not verified.') 
+    else :
+        print ('Enter a postivie number.')           
+except:
+    print ('Enter a valid input')
