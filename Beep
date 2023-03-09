@@ -1,0 +1,9 @@
+import time
+import winsound
+import keyboard 
+try:
+    while True:
+            time.sleep(2),winsound.Beep(1000,200)
+            print('Hi')
+except :
+    print("Done.")
